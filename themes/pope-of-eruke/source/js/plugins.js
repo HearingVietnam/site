@@ -39,7 +39,11 @@ $("#feature-clip").on("ended", () => {
   
     now.className  = "";
     next.className = "active";
-  
+    
+    /* hack! */
+    $("#feature-clip-caption-" + now.sizes).hide()
+    $("#feature-clip-caption-" + next.sizes).show()
+    
     $(id)[0].src = next.src;
     $(id)[0].play();
   })("#feature-clip")});
