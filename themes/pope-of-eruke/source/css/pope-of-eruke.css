@@ -151,7 +151,7 @@ body {
 
 /* about us */
 .about-us-container {
-  max-width: 571px;
+  margin-top: 80px;
 }
 
 .about-us-img-align {
@@ -163,9 +163,6 @@ body {
 @media (max-width: 735px) {
   .about-us-img-align {
     margin-top: 80px;
-  }
-  .about-us-container {
-    width: 100%;
   }
 }
 
