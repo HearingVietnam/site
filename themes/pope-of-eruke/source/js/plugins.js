@@ -29,7 +29,6 @@ $(window).scroll(() => {
   }});
 
 /* loop multiple videos and display captions */
-
 // make the caption reponsive
 function resizeOverlay(h) {
   $("div.overlay").css("height", h < 560 ? h : h - 80);
