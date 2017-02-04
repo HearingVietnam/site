@@ -30,7 +30,7 @@ body {
 }
 
 .navbar-toggle {
-  margin-top: 25px;
+  margin-top: 25px; 
 }
 
 @media (max-width: 767px) {
@@ -59,7 +59,7 @@ body {
 }
 
 #opaque-navbar {
-  background-color: #fff;
+  background-color: #rgba(0, 0, 0, 0.0);;
   /* rgba(0,0,0,0.0); */
   /* Transparent = rgba(0,0,0,0) / Translucent = (0,0,0,0.5)  */
   transition: background-color .5s ease 0s;
@@ -75,7 +75,6 @@ body {
 }
 
 .feature-clip-wrapper {
-  margin-top: 80px;
   width: 100%;
   max-height: 560px;
   overflow: hidden;
@@ -84,6 +83,7 @@ body {
 }
 
 .feature-clip-wrapper .overlay {
+  margin-top: 80px;
   position: absolute;
   height: 560px;
   width: 100%;
@@ -91,13 +91,6 @@ body {
 }
 
 .feature-clip-wrapper .overlay .text-container {
-  width: 100%;
-}
-
-.feature-clip-wrapper .overlay .text-container h1{
-  color: #fff;
-  opacity: 1;
-  text-transform: uppercase;
 }
 
 .feature-clip-wrapper .carousel-caption {
@@ -114,10 +107,7 @@ body {
   text-align: left;
 }
 
-#feature-clip-caption-1 {
-  display: block;
-}
-
+#feature-clip-caption-1,
 #feature-clip-caption-2,
 #feature-clip-caption-3 {
   display: none;
@@ -131,7 +121,7 @@ body {
   position: relative;
   overflow: hidden;
   display: block;
-  margin-bottom: 80px;
+  margin-bottom: 80
 }
 
 .banner-wrapper > img {
@@ -186,23 +176,15 @@ body {
 }
 
 .intro-component .who-are-we {
-  background-image: url("/assets/who-are-we.jpg");
+  background-image: url("/assets/img/who-are-we.jpg");
 }
 
 .intro-component .what-we-do {
-  background-image: url("/assets/what-we-do.jpg");
+  background-image: url("/assets/img/what-we-do.jpg");
 }
 
 .intro-component .get-involved {
-  background-image: url("/assets/get-involved.jpg");
-}
-
-.blur {
-  -webkit-filter: blur(10px);
-  -moz-filter: blur(10px);
-  -o-filter: blur(10px);
-  -ms-filter: blur(10px);
-  filter: blur(10px); 
+  background-image: url("/assets/img/get-involved.jpg");
 }
 
 /* article */
@@ -210,7 +192,6 @@ body {
   margin-top: 80px;
   width: 571px;
 }
-
 
 @media (max-width: 735px) {
   .article-container {
@@ -221,10 +202,14 @@ body {
 /* archive */
 .archive-wrapper {
   margin-top: 80px;
+  margin-bottom: 80px;
 }
 
+/* footer */
+
 .footer {
-  font-size: 1em;
+  margin-top: -40px;
+  font-size: .9em;
 }
 
 .footer > .container > .row > .col-sm-2,

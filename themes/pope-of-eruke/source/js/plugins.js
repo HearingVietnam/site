@@ -28,7 +28,20 @@ $(window).scroll(() => {
     //$("#navbar-logo").show() 
   }});
 
-/* loop multiple videos */
+/* loop multiple videos and display captions */
+
+// make the caption reponsive
+function resizeOverlay(h) {
+  $("div.overlay").css("height", h < 560 ? h : h - 80);
+}
+
+$(() => {
+  $("#feature-clip-caption-1").show()
+  resizeOverlay($("div.feature-clip-wrapper").height())});
+
+$(window).resize(() => {
+  resizeOverlay($("div.feature-clip-wrapper").height())});
+
 $("#feature-clip").on("ended", () => {
   ((id) => {
     var select = (query, _id = id) => document.querySelector(_id + query);
@@ -39,11 +52,18 @@ $("#feature-clip").on("ended", () => {
   
     now.className  = "";
     next.className = "active";
+    console.log($("div.feature-clip-wrapper").height())
     
-    /* hack! */
-    $("#feature-clip-caption-" + now.sizes).hide()
-    $("#feature-clip-caption-" + next.sizes).show()
+    // The ID for each video caption has a format of "#feature-clip-caption-X"
+    // where X is a number conresponding to a video source based on the order
+    // that video play. And the "<source/> "in HTML has an attribute called
+    // "sizes". Thus, we can use this attribute to store the number that we
+    // will use to find the conresponding caption. This is sort of a hack!!!!
+    $("#feature-clip-caption-" + now.sizes).hide();
+    $("#feature-clip-caption-" + next.sizes).show();
     
     $(id)[0].src = next.src;
     $(id)[0].play();
   })("#feature-clip")});
+
+$(() => $('[data-toggle="tooltip"]').tooltip());
