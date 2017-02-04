@@ -43,7 +43,6 @@ body {
 
 .navbar-wrapper {
   color: #333;
-
 }
 
 .navbar-wrapper > nav {
@@ -75,6 +74,7 @@ body {
 }
 
 .feature-clip-wrapper {
+  margin-top: 80px;
   width: 100%;
   max-height: 560px;
   overflow: hidden;
@@ -99,12 +99,19 @@ body {
 }
 
 .feature-clip-wrapper .carousel-caption  p {
-  font-size: 20pt;
+  font-size: 30pt;
   text-align: left;
 }
 
 .feature-clip-wrapper .carousel-caption  h1 {
+  font-size: 75pt;
   text-align: left;
+}
+
+@media (max-width: 767px) {
+  .feature-clip-wrapper {
+    display: none;
+ }
 }
 
 #feature-clip-caption-1,
@@ -115,13 +122,13 @@ body {
 
 /* banner */
 .banner-wrapper {
-  margin-top: 80px;
+  margin-top: 0px;
   width: 100%;
-  max-height: 320px;
+  max-height: 560px;
   position: relative;
   overflow: hidden;
   display: block;
-  margin-bottom: 80
+  margin-bottom: 80px;
 }
 
 .banner-wrapper > img {
@@ -129,7 +136,7 @@ body {
   height: auto;
 }
 
-.banner-wrapper > img {
+.banner-wrapper > iamg {
   -webkit-filter: blur(10px);
   -moz-filter: blur(10px);
   -o-filter: blur(10px);
@@ -148,9 +155,15 @@ body {
 
 }
 
+@media (max-width: 767px) {
+  .intro-component {
+    margin-top: 80px;
+  }
+ }
+
 .intro-component .col-sm-4 {
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 2px;
   text-align: center;
 }
 
@@ -176,16 +189,17 @@ body {
 }
 
 .intro-component .who-are-we {
-  background-image: url("/assets/img/who-are-we.jpg");
+  background-image: url("/assets/img/who-are-we-blur.jpg");
 }
 
 .intro-component .what-we-do {
-  background-image: url("/assets/img/what-we-do.jpg");
+  background-image: url("/assets/img/what-we-do-blur.jpg");
 }
 
 .intro-component .get-involved {
-  background-image: url("/assets/img/get-involved.jpg");
+  background-image: url("/assets/img/get-involved-blur.jpg");
 }
+
 
 /* article */
 .article-container {
@@ -201,7 +215,7 @@ body {
 
 /* archive */
 .archive-wrapper {
-  margin-top: 80px;
+  margin-top: 0px;
   margin-bottom: 80px;
 }
 
