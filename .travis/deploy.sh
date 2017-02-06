@@ -1,4 +1,4 @@
-git clone --depth 1 --branch gh-pages --single-branch $DEPLOY_REPO .deploy 
+git clone --depth 1 --branch master --single-branch $DEPLOY_REPO .deploy 
 cd .deploy
 git remote add -t master origin $DEPLOY_REPO
 
