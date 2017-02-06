@@ -26,6 +26,10 @@ Run server:
 $ hexo server
 ```
 
+## Deployment
+
+The site is built and deployed to Github Pages by Travis-CI.
+
 ## License
 
 [MIT](http://creativecommons.org/licenses/by/4.0/)
