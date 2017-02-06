@@ -1,9 +1,8 @@
 git clone --depth 1 --branch master --single-branch $DEPLOY_REPO .deploy 
 cd .deploy
-git remote add -t master origin $DEPLOY_REPO
 
 rm -rf ./*
 cp -r ../public/* .
 git add -A .
-git commit -m 'Site updated'
+git commit -m "Site updated: $(date)"
 git push -q -u origin master
