@@ -1,3 +1,5 @@
+# deploy.sh - deploy the generated site to Github Pages
+
 git clone --depth 1 --branch master --single-branch $DEPLOY_REPO .deploy 
 cd .deploy
 
