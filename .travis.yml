@@ -1,5 +1,4 @@
-# Deploy hexo site by travis-ci
-#
+# .travis.yml - Travis CI Configuration
 
 language: node_js
 
